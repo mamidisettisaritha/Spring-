@@ -1,0 +1,9 @@
+package com.sathya.springex;
+
+public class RealstateService {
+	public void RealStateInfo()
+	{
+		System.out.println("Realstate service Loan is created");
+	}
+
+}

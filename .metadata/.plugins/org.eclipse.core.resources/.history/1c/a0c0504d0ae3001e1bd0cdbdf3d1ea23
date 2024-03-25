@@ -1,0 +1,27 @@
+package com.sathya.springex;
+
+import org.springframework.context.annotation.Bean;
+
+public class JavaConfig {
+	public EmailService emailService()
+	{
+		EmailService emailService=new EmailService();
+		return emailService;
+	}
+	@Bean
+	public JavaCourseService javaCourseService()
+	{
+		JavaCourseService javaCourseService=new JavaCourseService();
+		return  javaCourseService;
+	}
+	@Bean
+	public Student student()
+	{
+	Student student=new Student();
+		student.setEmailService(emailService());
+		student.setJavaCourseService(javaCourseService());
+		return student;
+	}
+
+
+}

@@ -1,0 +1,10 @@
+package com.sathya.springex;
+
+public class HomeLoanService {
+	public void LoanInfo()
+	{
+		System.out.println("HomeLoan Service is Created");
+		System.out.println("Please pay Installement");
+	}
+
+}

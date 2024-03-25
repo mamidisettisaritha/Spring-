@@ -1,0 +1,24 @@
+package com.sathya.springex;
+
+import org.springframework.stereotype.Component;
+@Component
+public class Student {
+	public Student(EmailService emailService, com.sathya.springex.JavaCourseService javaCourseService) {
+		super();
+		this.emailService = emailService;
+		this.javaCourseService = javaCourseService;
+	}
+	private EmailService emailService;
+	private JavaCourseService javaCourseService;
+	
+	public  void details()
+	{
+		emailService.message();
+		javaCourseService.courseInfo();
+	}
+	public void JavaCourseService()
+	{
+		javaCourseService.courseInfo();
+	}
+	}
+	
